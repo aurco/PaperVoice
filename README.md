@@ -4,9 +4,6 @@ A paper-textured voice-notes app with an Android 17–style 1×1 widget, a three
 
 <p align="center">
   <img src="docs/screenshots/dashboard.png" width="200" alt="Dashboard with search and filters">
-  <img src="docs/screenshots/widget-recording.png" width="200" alt="1×1 widget recording popup">
-  <img src="docs/screenshots/recording-detail.png" width="200" alt="Recording detail with player">
-  <img src="docs/screenshots/lockscreen-simulator.png" width="200" alt="Android 17 lockscreen preview">
 </p>
 
 ## Features
