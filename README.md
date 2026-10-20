@@ -3,7 +3,7 @@
 A paper-textured voice-notes app with an Android 17–style 1×1 widget, a three-step recording popup, a floating bubble and a filterable audio dashboard. It runs in the browser and also ships as an installable Android APK.
 
 <p align="center">
-  <img src="docs/screenshots/dashboard.png" width="200" alt="Dashboard with search and filters">
+  <img src="https://github.com/aurco/PaperVoice/blob/main/dashboard.png" width="200" alt="Dashboard with search and filters">
 </p>
 
 ## Features
