@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper-bg: #FAF8F5;
+    --paper-card: #FFFFFF;
+    --paper-border: #E5E0D8;
+    --ink-black: #111111;
+    --ink-muted: #555555;
+    --ink-faint: #888888;
+  }
+
+  body {
+    background-color: var(--paper-bg);
+    color: var(--ink-black);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Authentic White Paper Texture (tactile fiber and subtle grain pattern) */
+.paper-texture {
+  background-color: #FAF8F5;
+  background-image: 
+    radial-gradient(#000000 0.4px, transparent 0.4px),
+    radial-gradient(#000000 0.3px, #FAF8F5 0.3px);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+  background-blend-mode: soft-light;
+}
+
+.paper-sheet {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.015) 1px, transparent 1px);
+  background-size: 100% 28px;
+  box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 10px 25px -5px rgba(0, 0, 0, 0.04),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.paper-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E0D8;
+  box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.04);
+}
+
+.paper-card:hover {
+  border-color: #C8C2B7;
+}
+
+.paper-widget {
+  background: #FFFFFF;
+  border: 1.5px solid #111111;
+  box-shadow: 3px 3px 0px #111111;
+  transition: all 0.15s ease-out;
+}
+
+.paper-widget:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #111111;
+}
+
+.paper-widget:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #111111;
+}
+
+/* Ink press button */
+.ink-btn {
+  background: #111111;
+  color: #FFFFFF;
+  transition: all 0.15s ease-out;
+}
+
+.ink-btn:hover {
+  background: #252525;
+}
+
+.ink-btn:active {
+  transform: scale(0.97);
+}
+
+.ink-btn-outline {
+  background: #FFFFFF;
+  color: #111111;
+  border: 1.5px solid #111111;
+  transition: all 0.15s ease-out;
+}
+
+.ink-btn-outline:hover {
+  background: #F3EFE6;
+}
+
+.ink-btn-outline:active {
+  transform: scale(0.97);
+}
+
+/* Custom waveform animation */
+@keyframes soundwave {
+  0%, 100% {
+    height: 6px;
+  }
+  50% {
+    height: 32px;
+  }
+}
+
+.animate-wave-bar {
+  animation: soundwave 1.2s ease-in-out infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5CEBE;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #999999;
+}

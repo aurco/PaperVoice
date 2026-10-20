@@ -1,0 +1,10 @@
+{
+  "name": "PaperVoice - 1x1 Widget & Voice Notes",
+  "description": "Paper-textured voice recorder with Android 17 1x1 lockscreen widget, floating bubble, 3-step recording popup, and audio dashboard with Quick Share.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
